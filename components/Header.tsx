@@ -16,9 +16,10 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon url="https://github.com/mikedaltonmtl"
-          fgColor="gray"
-          bgColor="transparent"
+        <SocialIcon url="https://discord.com/users/778371798575611944"
+          network="discord"
+          fgColor="transparent"
+          bgColor="gray"
         />
       </div>
 
