@@ -22,10 +22,10 @@ export default function About({}: Props) {
         className="mt-24 md:mb-0 md:mt-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[333px] xl:h-[400px] border border-white"
       />
       <div className="space-y-2 md:space-y-10 px-0 md:px-10 x:500">
-        <h4 className="text-2xl md:text-3xl font-semibold">
+        <h4 className="text-2xl md:text-3xl font-semibold text-justify">
           Here is a <span className="underline decoration-[#F7AB0A]/50">little</span> background
         </h4>
-        <p className="text-sm">
+        <p className="text-sm text-justify">
           Hi there! I&apos;ve just graduated from a Full-stack Web Dev bootcamp where I had a great time learning a bunch of new skills which I can&apos;t wait to put to work!
           My background is in Finance, but prior to the bootcamp I was a stay-at-home-Dad bringing up three young children and learning some great life skills such as time management, task prioritization, problem solving and even learning how to fold a fitted sheet!
         </p>
