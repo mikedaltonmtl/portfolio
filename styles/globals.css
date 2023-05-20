@@ -19,3 +19,7 @@
       hover:text-[#F7AB0A]/40
   }
 }
+
+.svg-icon path {
+  fill: #F7AB0A;
+}

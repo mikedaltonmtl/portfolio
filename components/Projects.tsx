@@ -37,7 +37,7 @@ export default function Projects({}: Props) {
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}: Happy Helpers
-                </span>{" "}
+                </span>
               </h4>
               <p className="text-lg text-justify md:text-left">
                 Helpful app to showcase skills in finals project
