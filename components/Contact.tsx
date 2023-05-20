@@ -1,30 +1,28 @@
-import { motion } from "framer-motion";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 
 type Props = {}
 
 export default function Contact({}: Props) {
   return (
-    <div className="h-screen relative flex flex-col text-justify md:flex-row md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div className="min-h-screen relative flex flex-col text-justify md:flex-row md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl">
         &nbsp;Contact
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-4xl font-semibold text-center mt-20">
           Nice to meet you.&nbsp;
           <span className="underline decoration-[#F7AB0A]/50">Let&apos;s Connect.</span>
         </h4>
 
-        <div className="flex flex-col items-start mx-auto">
-
+        <div className="flex flex-col items-start mx-auto space-y-2">
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse text-left" />
             <p className="text-2xl">Montreal</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
-          <span className=" fill-[#F7AB0A] h-7 w-7 flex items-center justify-center space-x-5 animate-pulse">
+            <span className=" fill-[#F7AB0A] h-7 w-7 flex items-center justify-center space-x-5 animate-pulse">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
             </span>
             <p className="text-2xl">mike-dalton-4a002224</p>
@@ -46,8 +44,19 @@ export default function Contact({}: Props) {
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-2xl">(514)267-9278</p>
           </div>
-
         </div>
+
+        <form className="flex flex-col space-y-2 w-fit mx-auto">
+          <div className="flex space-x-2">
+            <input placeholder="Name" className="contactInput" type="text" />
+            <input placeholder="Email" className="contactInput" type="email" />
+          </div>
+
+          <input placeholder="Subject" className="contactInput" type="text" />
+
+          <textarea placeholder="Message" className="contactInput" />
+          <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">Submit</button>
+        </form>
 
       </div>
     </div>
