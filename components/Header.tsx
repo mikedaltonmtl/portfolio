@@ -1,5 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 type Props = {}
 
@@ -23,7 +24,6 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center"
       >
-        {/* Social Icons */}
         <SocialIcon url="https://www.linkedin.com/in/mike-dalton-4a002224/"
           fgColor="gray"
           bgColor="transparent"
@@ -61,10 +61,14 @@ export default function Header({}: Props) {
           network="email"
           fgColor="gray"
           bgColor="transparent"
+          url="#contact"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Contact
-        </p>
+        
+        <Link href="#contact">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            Contact
+          </p>
+        </Link>
       </motion.div>
     </header>
   );
