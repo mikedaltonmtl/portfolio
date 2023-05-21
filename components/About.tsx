@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 
-type Props = {}
 
-export default function About({}: Props) {
+export default function About() {
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -2,12 +2,10 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
-type Props = {}
 
-export default function Header({}: Props) {
+export default function Header() {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20
-    xl:items-center">
+    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -24,20 +22,28 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIcon url="https://www.linkedin.com/in/mike-dalton-4a002224/"
+        <SocialIcon
+          url="https://www.linkedin.com/in/mike-dalton-4a002224/"
           fgColor="gray"
           bgColor="transparent"
+          title="LinkedIn"
         />
-        <SocialIcon url="https://github.com/mikedaltonmtl"
+        <SocialIcon
+          url="https://github.com/mikedaltonmtl"
           fgColor="gray"
           bgColor="transparent"
+          title="GitHub"
         />
-        <SocialIcon url="https://discord.com/users/778371798575611944"
-          network="discord"
-          fgColor="transparent"
-          bgColor="gray"
-          style={{ height: 27, width: 27 }}
-        />
+        <span className="h-[50px] w-[50px] flex justify-center items-center">
+          <SocialIcon
+            url="https://discord.com/users/778371798575611944"
+            network="discord"
+            fgColor="transparent"
+            bgColor="gray"
+            style={{ height: 27, width: 27, }}
+            title="Discord"
+          />
+        </span>
       </motion.div>
 
       <motion.div
@@ -62,6 +68,7 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
           url="#contact"
+          title="contact"
         />
         
         <Link href="#contact">

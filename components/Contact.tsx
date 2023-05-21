@@ -1,6 +1,7 @@
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from "react-hook-form";
 
+
 type Inputs = {
   name: string,
   email: string,
@@ -8,9 +9,8 @@ type Inputs = {
   message: string,
 };
 
-type Props = {}
 
-export default function Contact({}: Props) {
+export default function Contact() {
 
   const {
     register,

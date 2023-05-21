@@ -13,7 +13,7 @@ import { ArrowUpCircleIcon } from '@heroicons/react/24/solid';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40 scroll-smooth">
       <Head>
         <title>Mike&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -44,7 +44,6 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
-
 
       <footer className="sticky bottom-2 w-full">
         <div className="flex items-center justify-center">
