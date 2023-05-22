@@ -4,6 +4,20 @@
 
 @layer components {
 
+  .pageName {
+    @apply
+      absolute
+      top-16
+      md:top-20
+      uppercase
+      tracking-[20px]
+      text-gray-500
+      text-lg
+      md:text-2xl
+      w-full
+      text-center
+  }
+
   .heroButton {
     @apply
       px-6
@@ -35,5 +49,12 @@
       focus:border-[#F7AB0A]/40
       focus:text-[#F7AB0A]/40
       hover:border-[#F7AB0A]/40
+  }
+
+  .scrollToTop-btn {
+    @apply
+      fixed
+      bottom-2
+      w-full
   }
 }
