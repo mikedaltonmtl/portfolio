@@ -13,7 +13,7 @@ export default function About() {
       </h3>
 
       <motion.img
-        initial={{ x: -200, opacity: 0 }}
+        initial={{ x: -300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         src="/IMG_2205.jpg"
