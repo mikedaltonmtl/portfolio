@@ -62,7 +62,7 @@ export default function Experience() {
         &nbsp;Experience
       </h3>
 
-      <div className="w-[600px] h-screen pt-32 flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
+      <div className="w-[500px] h-screen pt-[120px] md:pt-32 flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
         {experiences.map(experiance => (
           <ExperienceCard
             key={experiance.url}

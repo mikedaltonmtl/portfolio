@@ -13,12 +13,12 @@ export default function About() {
       </h3>
 
       <motion.img
-        initial={{ x: -300, opacity: 0 }}
+        initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         src="/IMG_2205.jpg"
         alt="skiing with Clara"
-        className="md:mb-10 md:mt-0 mt-4 mb-2 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96
+        className="md:mb-10 md:mt-0 mt-12 mb-2 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96
         xl:w-[333px] xl:h-[400px] border border-white"
       />
 
