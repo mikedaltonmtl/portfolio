@@ -56,17 +56,17 @@ export default function Experience() {
       initial={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
-      className="flex flex-col relative min-h-screen text-left overflow-hidden md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+      className="ml-3 flex flex-col relative min-h-screen text-left overflow-hidden md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="pageName">
         &nbsp;Experience
       </h3>
 
       <div className="w-[500px] h-screen pt-[120px] md:pt-32 flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
-        {experiences.map(experiance => (
+        {experiences?.map(experience => (
           <ExperienceCard
-            key={experiance.url}
-            experience={experiance}
+            key={experience.url}
+            experience={experience}
           />
         ))}
       </div>

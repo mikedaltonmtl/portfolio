@@ -6,7 +6,7 @@ export default function About() {
       initial={{ opacity: 0 }}
       transition={{ duration: 2.5, delay: 0.2 }}
       whileInView={{ opacity: 1 }}
-      className="md:mb-20 md:pt-[150px] flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl justify-center md:items-start items-center mx-auto"
+      className="ml-3 md:mb-20 md:pt-[150px] flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl justify-center md:items-start items-center mx-auto"
     >
       <h3 className="pageName">
         &nbsp;About
@@ -28,7 +28,7 @@ export default function About() {
         </h4>
         <p className="text-xs text-justify">
           Hi there! I&apos;ve Mike, a recent graduated from a Full-stack Web Dev bootcamp. I&apos;ve had a great time learning a bunch of new skills which I can&apos;t wait to put to work!<br />
-          My background is in Finance, but rior to the bootcamp I was a stay-at-home-Dad, bringing up three young children. This was truly one of the best learning experiences of my life, during which time I developed some great, transferable skills such as task prioritization, problem solving and I even figured out how to fold a fitted sheet!<br />
+          My background is in Finance, but prior to the bootcamp I was a stay-at-home-Dad, bringing up three young children. This was truly one of the best learning experiences of my life, during which time I developed some great, transferable skills such as time management, task prioritization and problem solving as well some that I hope aren&apos;t transferable, like blowing noses and changing diapers!<br />
           The bootcamp gave me plenty of hands-on experience with HTML, CSS and JavaScript; while the introduction to React was love at first sight!
         </p>
       </div>

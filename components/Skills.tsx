@@ -1,48 +1,51 @@
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import Link from 'next/link';
-import { ArrowUpCircleIcon } from '@heroicons/react/24/solid';
 
+const skills = [
+  { url: "/JavaScript.png", name: "JavaScript" },
+  { url: "/HTML.png", name: "HTML 5" },
+  { url: "/CSS3.png", name: "CSS 3" },
+  { url: "/React.jpeg", name: "React.js" },
+  { url: "/NextJS.jpeg", name: "Next.js" },
+  { url: "/NodeJS.png", name: "Node.js" },
+  { url: "/Tailwind.png", name: "Tailwind" },
+  { url: "/Bootstrap.png", name: "Bootstrap" },
+  { url: "/GitHub.webp", name: "GitHub" },
+  { url: "/PostgreSQL.png", name: "PostgreSQL" },
+  { url: "/SQL.jpeg", name: "SQL" },
+  { url: "/Rails.png", name: "Ruby on Rails" },
+];
 
-type Props = {}
-
-export default function Skills({}: Props) {
+export default function Skills() {
   return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
-        whileInView={{ opacity: 1 }}
-        className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
-      >
-        <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl">
-          &nbsp;Skills
-        </h3>
+    <motion.div
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1 }}
+      className="ml-3 pt-[0px] md:pt-12 min-h-screen relative flex flex-col justify-center text-center md:text-left xl:flex-row max-w-[2000] xl:px-10 xl:space-y-0 mx-auto items-center"
+    >
+      <h3 className="pageName">
+        &nbsp;Skills
+      </h3>
 
-        <div className="grid grid-cols-4 gap-5">
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-        </div>
-      </motion.div>
-      
-      <motion.footer
-        initial={{ opacity: 0, scale: 0.1 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1.0 }}
-        className="sticky bottom-2 w-full"
-      >
-        <div className="flex items-center justify-center">
-          <Link href="#hero">
-            <ArrowUpCircleIcon className="text-[#F7AB0A]/20 hover:text-[#F7AB0A] h-7 w-7 z-20" />
-          </Link>
-        </div>
-      </motion.footer>
-    </>
+      <div className="grid grid-cols-3 gap-5">
+        {/* split skills into two groups for entrance direction */}
+        {skills?.slice(0, skills.length / 2).map((skill) => (
+          <Skill
+            key={ skill.name }
+            url={ skill.url }
+            name={ skill.name }
+          />
+        ))}
+        {skills?.slice(skills.length / 2, skills.length).map((skill) => (
+          <Skill
+            key={ skill.name }
+            url={ skill.url }
+            name={ skill.name }
+            directionLeft
+          />
+        ))}
+      </div>
+    </motion.div>
   );
 }
