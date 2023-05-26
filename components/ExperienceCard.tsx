@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 
+interface Experience {
+  companyName: string;
+  jobTitle: string;
+  duration: string;
+  url: string;
+  summary: string[];
+}
 
-export default function ExperienceCard({experience}: Props) {
+export default function ExperienceCard(experience: Experience) {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] snap-center bg-[#292929] md:p-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity-200 overflow-hidden">
       <motion.img
@@ -20,7 +27,7 @@ export default function ExperienceCard({experience}: Props) {
           <p className="uppercase pb-2 text-gray-300">{experience.duration}</p>
         </div>
         <ul className="list-disc space-y-2 ml-5 text-sm">
-          {experience.summary.map((bullet: String, index) => (
+          {experience.summary.map((bullet, index) => (
             <li key={index}>
               {bullet}
             </li>
