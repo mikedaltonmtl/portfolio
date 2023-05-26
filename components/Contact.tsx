@@ -34,11 +34,9 @@ export default function Contact() {
       </h4>
 
       <section className="absolute md:top-48 top-40 flex md:flex-row flex-col justify-center items-start md:gap-10 gap-5 md:pt-10">
-
-        {/* icons */}
         <motion.div
           initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
           className="flex flex-col items-start mx-auto space-y-2"
         >
@@ -72,10 +70,9 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* form */}
         <motion.div
           initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity:1 , y: 0 }}
+          animate={{ opacity:1 , y: 0 }}
           transition={{ duration: 1.5 }}
           className="flex flex-col md:space-y-10 space-y-2 items-start"
         >
