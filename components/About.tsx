@@ -12,19 +12,19 @@ export default function About() {
         &nbsp;About
       </h3>
 
-      <motion.img
+      <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        whileHover={{
-          scale: 1.2,
-          transition: { duration: 0.2 }
-        }}
-        src="/IMG_2205.jpg"
-        alt="skiing with Clara"
-        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:w-64 md:h-96
-        xl:w-[333px] xl:h-[400px] border border-white overflow-hidden"
-      />
+        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[333px] xl:h-[400px] border border-white overflow-hidden"
+      >
+        <motion.img
+          whileHover={{ scale: 1.5 }}
+          transition={{ duration: 2 }}
+          src="/IMG_2205.jpg"
+          alt="Skiing with Clara"
+        />
+      </motion.div>
 
       <div className="space-y-2 md:space-y-10 px-5 md:px-10 max-w-[500px]">
         <h4 className="text-xl md:text-2xl font-semibold text-center md:text-justify">
