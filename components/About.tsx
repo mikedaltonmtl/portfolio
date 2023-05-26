@@ -16,10 +16,14 @@ export default function About() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
+        whileHover={{
+          scale: 1.2,
+          transition: { duration: 0.2 }
+        }}
         src="/IMG_2205.jpg"
         alt="skiing with Clara"
-        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96
-        xl:w-[333px] xl:h-[400px] border border-white"
+        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:w-64 md:h-96
+        xl:w-[333px] xl:h-[400px] border border-white overflow-hidden"
       />
 
       <div className="space-y-2 md:space-y-10 px-5 md:px-10 max-w-[500px]">

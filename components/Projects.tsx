@@ -56,7 +56,7 @@ export default function Projects() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             key={ project.id }
-            className="md:pt-28 pt-28 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center"
+            className="md:pt-32 pt-32 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center"
           >
             <motion.img
               initial={{ opacity: 0, y: -200 }}
