@@ -36,8 +36,8 @@ export default function Contact() {
       <section className="absolute md:top-48 top-40 flex md:flex-row flex-col justify-center items-start md:gap-10 gap-5 md:pt-10">
         <motion.div
           initial={{ opacity: 0, x: -200 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2 }}
           className="flex flex-col items-start mx-auto space-y-2"
         >
           <div className="contactInfo">
@@ -70,32 +70,29 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity:1 , y: 0 }}
-          transition={{ duration: 1.5 }}
-          className="flex flex-col md:space-y-10 space-y-2 items-start"
+        <motion.form
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1 , y: 0 }}
+          transition={{ duration: 2 }}
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 md:w-fit w-3/4 mx-auto justify-evenly"
         >
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 md:w-fit w-3/4 mx-auto"
+          <div className="flex space-x-2">
+            <input {...register("name")} placeholder="Name" className="contactInput w-1/2" type="text" />
+            <input {...register("email")} placeholder="Email" className="contactInput w-1/2" type="email" />
+          </div>
+
+          <input {...register("subject")} placeholder="Subject" className="contactInput" type="text" />
+
+          <textarea {...register("message")} placeholder="Message" className="contactInput" />
+          <button
+            type="submit"
+            className="bg-[#F7AB0A] py-2 md:py-5 px-10 rounded-md text-black font-bold text-lg"
           >
-            <div className="flex space-x-2">
-              <input {...register("name")} placeholder="Name" className="contactInput w-1/2" type="text" />
-              <input {...register("email")} placeholder="Email" className="contactInput w-1/2" type="email" />
-            </div>
-
-            <input {...register("subject")} placeholder="Subject" className="contactInput" type="text" />
-
-            <textarea {...register("message")} placeholder="Message" className="contactInput" />
-            <button
-              type="submit"
-              className="bg-[#F7AB0A] py-2 md:py-5 px-10 rounded-md text-black font-bold text-lg"
-            >
-              Submit
-            </button>
-          </form>
-        </motion.div>
+            Submit
+          </button>
+        </motion.form>
+        {/* </motion.div> */}
 
       </section>
 
