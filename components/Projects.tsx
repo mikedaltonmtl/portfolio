@@ -50,11 +50,8 @@ export default function Projects() {
 
       <div className="relative h-full w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
         {projects.map((project, i) => (
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
+
+          <div
             key={ project.id }
             className="md:pt-32 pt-32 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center"
           >
@@ -76,7 +73,7 @@ export default function Projects() {
                 { project.description }
               </p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
       {/* background swoosh */}
