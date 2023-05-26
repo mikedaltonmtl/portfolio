@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 
-const experiences = [
+
+interface Job {
+  id: number;
+  companyName: string;
+  jobTitle: string;
+  duration: string;
+  url: string;
+  summary: string[];
+}
+
+interface Jobs extends Array<Job>{}
+
+const experiences:Jobs = [
   {
+    id: 1,
     url: "/NBC.jpg",
     companyName: "National Bank Financial",
     jobTitle: "Analyst, Reconciliation",
@@ -14,6 +27,7 @@ const experiences = [
     ]
   },
   {
+    id: 2,
     url: "/CDP.avif",
     companyName: "Caisse de dépôt et placement du Québec",
     jobTitle: "Analyst, Corporate Actions",
@@ -25,6 +39,7 @@ const experiences = [
     ]
   },
   {
+    id: 3,
     url: "/RBC.png",
     companyName: "RBC Direct Investing",
     jobTitle: "Investment Services Representative",
@@ -36,6 +51,7 @@ const experiences = [
     ]
   },
   {
+    id: 4,
     url: "/ISI.png",
     companyName: "ISI",
     jobTitle: "Junior Developer",
@@ -65,7 +81,7 @@ export default function Experience() {
       <div className="w-[500px] h-screen pt-[120px] md:pt-32 flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
         {experiences?.map(experience => (
           <ExperienceCard
-            key={experience.url}
+            key={experience.id}
             experience={experience}
           />
         ))}
