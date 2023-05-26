@@ -10,17 +10,16 @@ export default function ScrollToTop() {
   
   useEffect(() => {
     const containerDiv = document.getElementById("container") || null;
+    if (!containerDiv) {
+      return;
+    }
     
     const updatePosition = () => {
-      if (containerDiv) {
-        setScrollPosition(containerDiv?.scrollTop);
-      }
+      setScrollPosition(containerDiv?.scrollTop);
     };
 
-    if (containerDiv) {
-      containerDiv.addEventListener("scroll", updatePosition);
-      return () => containerDiv.removeEventListener("scroll", updatePosition);
-    }
+    containerDiv.addEventListener("scroll", updatePosition);
+    return () => containerDiv.removeEventListener("scroll", updatePosition);
   }, []);
 
 
