@@ -8,9 +8,27 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import ScrollToTop from '../components/ScrollToTop';
-
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const Home: NextPage = () => {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  
+  useEffect(() => {
+    const containerDiv = document.getElementById("container") || null;
+    if (!containerDiv) {
+      return;
+    }
+    
+    const updatePosition = () => {
+      setScrollPosition(containerDiv?.scrollTop);
+    };
+
+    containerDiv.addEventListener("scroll", updatePosition);
+    return () => containerDiv.removeEventListener("scroll", updatePosition);
+  }, []);
+
   return (
     <div id="container" className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-rounded-[5px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40 scroll-smooth">
       <Head>
@@ -45,8 +63,11 @@ const Home: NextPage = () => {
         <Contact />
       </section>
 
-      <ScrollToTop />
-      
+      {scrollPosition > 200 && (
+        <AnimatePresence>
+          <ScrollToTop />
+        </AnimatePresence>
+      )}
     </div>
   );
 };

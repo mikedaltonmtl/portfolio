@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 
 export default function Header() {
+
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -70,7 +71,7 @@ export default function Header() {
           url="#contact"
           title="contact"
         />
-        
+      
         <Link href="#contact">
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
             Contact
