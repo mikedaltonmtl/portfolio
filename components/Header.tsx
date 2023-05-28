@@ -28,12 +28,14 @@ export default function Header() {
           fgColor="gray"
           bgColor="transparent"
           title="LinkedIn"
+          target="_blank"
         />
         <SocialIcon
           url="https://github.com/mikedaltonmtl"
           fgColor="gray"
           bgColor="transparent"
           title="GitHub"
+          target="_blank"
         />
         <span className="h-[50px] w-[50px] flex justify-center items-center">
           <SocialIcon
@@ -43,6 +45,7 @@ export default function Header() {
             bgColor="gray"
             style={{ height: 27, width: 27, }}
             title="Discord"
+            target="_blank"
           />
         </span>
       </motion.div>
