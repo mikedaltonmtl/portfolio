@@ -16,7 +16,7 @@ export default function About() {
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[333px] xl:h-[400px] border border-white overflow-hidden"
+        className="md:mb-10 md:mt-0 mt-14 mb-2 flex-shrink-0 w-44 h-44 rounded-full object-cover md:rounded-lg md:w-[300px] md:h-[360px] xl:w-[333px] xl:h-[400px] border border-white overflow-hidden"
       >
         <motion.img
           whileHover={{ scale: 1.5 }}
