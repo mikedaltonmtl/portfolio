@@ -10,17 +10,17 @@ It took me probably twenty hours just to code-along, then the same again to pers
 You too can follow the tutorial at https://www.youtube.com/watch?v=urgi2iz9P6U, it's seriously impressive!
 
 
-## Getting Started
+## Set up
 
-First, run the development server:
+If you'd like to install this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Clone the project from the GitHub repository <https://github.com/mikedaltonmtl/portfolio/>.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Install dependencies with `npm install`.
+
+- Type `npm run dev` to run the development server.
+
+-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 ## Tech Stack
