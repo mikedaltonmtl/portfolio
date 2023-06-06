@@ -1,13 +1,13 @@
 # Personal Portfolio
 
 We all need our own website where we can show off all the amazing projects we're working on, right?!
-Either way, this one is mine.
+Either way, this one is mine: https://portfolio-mikedaltonmtl.vercel.app
 
 ![Portfolio](./public/Portfolio.gif)
 
-I was amazed that 
-
-
+I was amazed that the originator, Sonny Sangha, was able to code this whole thing in a 4 hour live-stream on YouTube. 
+It took me probably twenty hours just to code-along, then the same again to personalize the information. 
+You too can follow the tutorial at https://www.youtube.com/watch?v=urgi2iz9P6U, it's seriously impressive!
 
 
 ## Getting Started
@@ -21,6 +21,7 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 
 ## Tech Stack
 
