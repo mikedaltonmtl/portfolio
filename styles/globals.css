@@ -61,6 +61,17 @@
       justify-center
   }
 
+  svg.newTabIcon {
+    @apply
+      fill-[#F7AB0A]
+      h-5 md:h-7
+      w-5 md:w-7
+      animate-pulse
+      inline-block
+      mb-2
+      ml-2
+  }
+
   .contactInput {
     @apply
       outline-none
