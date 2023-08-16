@@ -41,6 +41,13 @@ export default function Projects() {
       description: "Single-page Twitter clone: Each student was given starter code for this project to sharpen their HTML, CSS, JS, jQuery and AJAX front end skills, and their Node.js and Express back end skills.",
       url: "https://next-tweeter-neon.vercel.app/",
     },
+    {
+      id: 6,
+      image: "/DogArt.gif",
+      title: "DogArt",
+      description: "Photo Gallery to collate pictures of our new puppy. Next 13, Tailwind and CSS with responsive design for phone screens.",
+      url: "https://dogart.vercel.app/",
+    },
   ];
 
   return (
