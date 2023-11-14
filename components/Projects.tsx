@@ -7,13 +7,26 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      image: "/Ladder.gif",
+      title: "Letter Ladder",
+      description: "Word Puzzle App: open-source group project with New Idea Machine. TypeScript, Next 13 and Tailwind.",
+      url: "https://github.com/new-idea-machine/Word-Game-App/",
+    },    {
+      id: 2,
+      image: "/DogArt.gif",
+      title: "DogArt",
+      description: "Photo Gallery to collate pictures of our new puppy. Next 13, Tailwind and CSS with responsive design for phone screens.",
+      url: "https://dogart.vercel.app/",
+    },
+    {
+      id: 3,
       image: "/HH.gif",
       title: "Happy Helpers",
       description: "Finals, group project: A crowd-sourcing, volunteering app with a focus on building community. Built with Next.js, React, Tailwind, Prisma and PostgreSQL. Includes Google Maps API and Chat Engine integration.",
       url: "https://happy-helpers-static.vercel.app/",
     },
     {
-      id: 2,
+      id: 4,
       image: "/mystery.gif",
       title: "Murder Mystery",
       description: "2D Sprite Animation: Murder Mystery game. Built with JavaScript running on Express Server, adapted from Pizza Legends YouTube tutorial.",
@@ -21,32 +34,25 @@ export default function Projects() {
 
     },
     {
-      id: 3,
+      id: 5,
       image: "/scheduler.gif",
       title: "Interview Scheduler",
       description: "React SPA: A single-page application that allows students to book technical interviews with mentors. The front end is built with React.js and makes API requests to fetch and store appointment data from a ProgreSQL database.",
       url: "https://scheduler-z3gj.onrender.com",
     },
     {
-      id: 4,
+      id: 6,
       image: "/donut.png",
       title: "The Donut Company",
       description: "Midterms, group project: A commerce app that allows a restaurant to communicate with it's clients over SMS. Writen in JavaScript using JQuery, AJAX, SASS and Twilio, with Express Server and PostgreSQL on the back end.",
       url: "https://donut-company.onrender.com",
     },
     {
-      id: 5,
+      id: 7,
       image: "/tweeter.jpeg",
       title: "Tweeter",
       description: "Single-page Twitter clone: Each student was given starter code for this project to sharpen their HTML, CSS, JS, jQuery and AJAX front end skills, and their Node.js and Express back end skills.",
       url: "https://next-tweeter-neon.vercel.app/",
-    },
-    {
-      id: 6,
-      image: "/DogArt.gif",
-      title: "DogArt",
-      description: "Photo Gallery to collate pictures of our new puppy. Next 13, Tailwind and CSS with responsive design for phone screens.",
-      url: "https://dogart.vercel.app/",
     },
   ];
 

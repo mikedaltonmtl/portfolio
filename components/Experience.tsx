@@ -16,6 +16,18 @@ interface Jobs extends Array<Job>{}
 const experiences:Jobs = [
   {
     id: 1,
+    url: "/ReturnPal.png",
+    companyName: "ReturnPal Courier Service",
+    jobTitle: "Front-End Developer",
+    duration: "Oct 2023 - Nov 2023",
+    summary: [
+      "Creation of a new website for ReturnPal Courier Service, a Toronto start-up.",
+      "Bringing Figma designs to life as an animated website with responsive design.",
+      "Group project via the collaboration between Lighthouse Labs and the Riipen ICT Ignite program.",
+    ]
+  },
+  {
+    id: 2,
     url: "/NBC.jpg",
     companyName: "National Bank Financial",
     jobTitle: "Analyst, Reconciliation",
@@ -27,7 +39,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     url: "/CDP.avif",
     companyName: "Caisse de dépôt et placement du Québec",
     jobTitle: "Analyst, Corporate Actions",
@@ -39,7 +51,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     url: "/RBC.png",
     companyName: "RBC Direct Investing",
     jobTitle: "Investment Services Representative",
@@ -51,7 +63,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     url: "/ISI.png",
     companyName: "ISI",
     jobTitle: "Junior Developer",
