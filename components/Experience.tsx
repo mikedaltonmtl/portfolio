@@ -21,7 +21,7 @@ const experiences:Jobs = [
     jobTitle: "AI Trainer",
     duration: "Jan 2024 - Present",
     summary: [
-      "Design diverse JavaScript-based coding problems and challenges for a coding chatbot",
+      "Design diverse JavaScript-based problems and challenges for a coding chatbot",
       "Evaluate code quality produced by AI models for correctness and performance",
       "Provide incremental corrections to inaccurate responses, with prompts for improvements",
       "Analyze and rate quality of prompts provided by other users",
