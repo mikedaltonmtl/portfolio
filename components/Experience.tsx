@@ -16,6 +16,19 @@ interface Jobs extends Array<Job>{}
 const experiences:Jobs = [
   {
     id: 1,
+    url: "/DataAnnotation.png",
+    companyName: "DataAnnotation",
+    jobTitle: "AI Trainer",
+    duration: "Jan 2024 - Present",
+    summary: [
+      "Design diverse JavaScript-based coding problems and challenges for a coding chatbot",
+      "Evaluate code quality produced by AI models for correctness and performance",
+      "Provide incremental corrections to inaccurate responses, with prompts for improvements",
+      "Analyze and rate quality of prompts provided by other users",
+    ]
+  },
+  {
+    id: 2,
     url: "/ReturnPal.png",
     companyName: "ReturnPal Courier Service",
     jobTitle: "Front-End Developer",
@@ -27,7 +40,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     url: "/NBC.jpg",
     companyName: "National Bank Financial",
     jobTitle: "Analyst, Reconciliation",
@@ -39,7 +52,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     url: "/CDP.avif",
     companyName: "Caisse de dépôt et placement du Québec",
     jobTitle: "Analyst, Corporate Actions",
@@ -51,7 +64,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     url: "/RBC.png",
     companyName: "RBC Direct Investing",
     jobTitle: "Investment Services Representative",
@@ -63,7 +76,7 @@ const experiences:Jobs = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     url: "/ISI.png",
     companyName: "ISI",
     jobTitle: "Junior Developer",
